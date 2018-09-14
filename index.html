@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="slick/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- подключение файла с нашими стилями -->
-    <title>Hello, world!</title>
+    <title>Мебель Елены: Производство и продажа</title>
 </head>
 
 <body>
@@ -23,10 +23,10 @@
                     <h1 class="logotip">Мебель Елена</h1>
                     <p class="header-text">Производство и продажа мебели по всей России</p>
                 </div>
-                <div class="col-lg-3 text-right">
+                <div class="col-lg-3 text-right" id="contact">
                     <a href="tel:+74951281356" class="header-adress">+7 (495) 128-13-56</a>
                     <br>
-                    <a href="# " class="header-adress">mebel.elena@bk.ru</a>
+                    <a href="mailto:mebel.elena@bk.ru?subject=Заказ мебели" class="header-adress">mebel.elena@bk.ru</a>
                 </div>
                 <div class="col-lg-3">
                     <button type="button" class="button header-button">Заказать звонок</button>
@@ -36,12 +36,12 @@
             <div class="row">
                 <div class="col-lg-12">
                     <nav class="row header-novigation">
-                        <a href="# " class="col-lg-2 header-menu">О КОМПАНИИ</a>
-                        <a href="# " class="col-lg-2 header-menu">БЕСПЛАТНАЯ ДОСТАВКА</a>
+                        <a href="#about" class="col-lg-2 header-menu">О КОМПАНИИ</a>
+                        <a href="#economy" class="col-lg-2 header-menu">БЕСПЛАТНАЯ ДОСТАВКА</a>
                         <a href="# " class="col-lg-1 header-menu">СБОРКА</a>
-                        <a href="# " class="col-lg-2 header-menu">ГАРАНТИЯ И СЕРВИС</a>
+                        <a href="#preoritet" class="col-lg-2 header-menu">ГАРАНТИЯ И СЕРВИС</a>
                         <a href="# " class="col-lg-2 header-menu">ОПЛАТА</a>
-                        <a href="# " class="col-lg-2 header-menu">ПОРТФОЛИО</a>
+                        <a href="#portfolio" class="col-lg-2 header-menu">ПОРТФОЛИО</a>
                         <a href="# " class="col-lg-1 header-menu">ОТЗЫВЫ</a>
                     </nav>
                 </div>
@@ -61,9 +61,10 @@
                     </div>
                 </div>
             </section>
+            <!--  <div class="fon-about"></div> -->
             <section class="about">
                 <div class="row">
-                    <h3 class="text-center col-lg-12 section-caption">О КОМПАНИИ</h3>
+                    <h3 class="text-center col-lg-12 section-caption" id="about">О КОМПАНИИ</h3>
                 </div>
                 <div class="row">
                     <div class="col-lg-7 offset-5 about-text">
@@ -75,7 +76,7 @@
             </section>
             <section class="preoritet ">
                 <div class="row">
-                    <h3 class="text-center col-lg-12 section-caption">Почему лучше совершать покупки в магазине «Мебель Елена» </h3>
+                    <h3 class="text-center col-lg-12 section-caption" id="preoritet">Почему лучше совершать покупки в магазине «Мебель Елена» </h3>
                 </div>
                 <div class="row">
                     <div class="col-lg-12 section-text">
@@ -84,7 +85,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-7 preoritet-text">
-                        <p class="preoritet-text-1">Во-первых, магазин представляет собой интернет-витрину производственного холдинга - это мебельные фабрики которые уже много лет работают на российском рынке и несут ответственность перед покупателем, а также держат высокую планку качества.</p>
+                        <p class="preoritet-text-1 fon-preoritet">Во-первых, магазин представляет собой интернет-витрину производственного холдинга - это мебельные фабрики которые уже много лет работают на российском рынке и несут ответственность перед покупателем, а также держат высокую планку качества.</p>
                         <p class="preoritet-text-1">Во-вторых, уже с первых мгновений знакомства с сайтом становится понятно, что главная цель компании – удовлетворение нужд покупателя. Наша миссия - это "Совершенство через комфорт ". Мы стараемся и действительно делаем людей и их жизнь лучше, создавая им комфорт и уют дома.
                             <br> Вы быстро находите интересующий вас товар, так же быстро оформляете заказ и получаете его в кратчайшие сроки. Кроме того, удобство взаимодействия с компанией не зависит от объема заказа и наличия особых пожеланий.</p>
                     </div>
@@ -122,7 +123,7 @@
             <section class="economy">
                 <div class="fon-economy"></div>
                 <div class="row">
-                    <h3 class="text-center col-lg-12 section-caption">Как компания «Мебель Елена» помогает экономить</h3>
+                    <h3 class="text-center col-lg-12 section-caption" id="economy">Как компания «Мебель Елена» помогает экономить</h3>
                 </div>
                 <div class="row">
                     <ul class=" economy-list">
@@ -167,86 +168,153 @@
                 </div>
             </section>
         </div>
-            <section class="portfolio ">
-                <div class="row">
-                    <h3 class="col-lg-12 text-center section-caption">Портфолио</h3>
+        <section class="portfolio ">
+            <div class="row">
+                <h3 class="col-lg-12 text-center section-caption" id="portfolio">Портфолио</h3>
+            </div>
+            <div class="feedback-slider">
+                <div class="slider feedback-slider-item">
+                    <div>
+                        <div class="feedback-slider-div text-center">
+                            <div class="feedback-box">
+                                <img class="center-block feedback-img" src="img/portfolio-1.jpg" alt="portfolio" width="360px" height="360px">
+                            </div>
+                            <div class="feedback-shadow">
+                                <p class="feedback-shadow-text">СТЕЛЛАЖ ПО МАКЕТУ</p>
+                                <p class="feedback-shadow-number">Заказ №1119-2 от 13.07.2018</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="feedback-slider-div text-center box-prior">
+                            <div class="feedback-box">
+                                <img class="center-block feedback-img" src="img/portfolio-2.jpg" alt="portfolio" width="360px" height="360px">
+                            </div>
+                            <div class="feedback-shadow">
+                                <p class="feedback-shadow-text">ШКАФ ПО РАЗМЕРУ</p>
+                                <p class="feedback-shadow-number">Заказ №1119-2 от 13.07.2018</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="feedback-slider-div text-center">
+                            <div class="feedback-box">
+                                <img class="center-block feedback-img" src="img/portfolio-3.jpg" alt="portfolio" width="360px" height="360px">
+                            </div>
+                            <div class="feedback-shadow">
+                                <p class="feedback-shadow-text">ГАРДЕРОБНАЯ ПО РАЗМЕРУ </p>
+                                <p class="feedback-shadow-number">Заказ №1119-2 от 13.07.2018</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="feedback-slider-div text-center">
+                            <div class="feedback-box">
+                                <img class="center-block feedback-img" src="img/portfolio-3.jpg" alt="portfolio" width="360px" height="360px">
+                            </div>
+                            <div class="feedback-shadow">
+                                <p class="feedback-shadow-text">ГАРДЕРОБНАЯ ПО РАЗМЕРУ </p>
+                                <p class="feedback-shadow-number">Заказ №1119-2 от 13.07.2018</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="feedback-slider-div text-center box-prior">
+                            <div class="feedback-box">
+                                <img class="center-block feedback-img" src="img/portfolio-1.jpg" alt="portfolio" width="360px" height="360px">
+                            </div>
+                            <div class="feedback-shadow">
+                                <p class="feedback-shadow-text">СТЕЛЛАЖ ПО МАКЕТУ</p>
+                                <p class="feedback-shadow-number">Заказ №1119-2 от 13.07.2018</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="feedback-slider-div text-center">
+                            <div class="feedback-box">
+                                <img class="center-block feedback-img" src="img/portfolio-2.jpg" alt="portfolio" width="360px" height="360px">
+                            </div>
+                            <div class="feedback-shadow">
+                                <p class="feedback-shadow-text">ШКАФ ПО РАЗМЕРУ</p>
+                                <p class="feedback-shadow-number">Заказ №1119-2 от 13.07.2018</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="feedback-slider-div text-center">
+                            <div class="feedback-box">
+                                <img class="center-block feedback-img" src="img/portfolio-2.jpg" alt="portfolio" width="360px" height="360px">
+                            </div>
+                            <div class="feedback-shadow">
+                                <p class="feedback-shadow-text">ШКАФ ПО РАЗМЕРУ</p>
+                                <p class="feedback-shadow-number">Заказ №1119-2 от 13.07.2018</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="feedback-slider-div text-center box-prior">
+                            <div class="feedback-box">
+                                <img class="center-block feedback-img" src="img/portfolio-3.jpg" alt="portfolio" width="360px" height="360px">
+                            </div>
+                            <div class="feedback-shadow">
+                                <p class="feedback-shadow-text">ГАРДЕРОБНАЯ ПО РАЗМЕРУ </p>
+                                <p class="feedback-shadow-number">Заказ №1119-2 от 13.07.2018</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="feedback-slider-div text-center">
+                            <div class="feedback-box">
+                                <img class="center-block feedback-img" src="img/portfolio-1.jpg" alt="portfolio" width="360px" height="360px">
+                            </div>
+                            <div class="feedback-shadow">
+                                <p class="feedback-shadow-text">СТЕЛЛАЖ ПО МАКЕТУ</p>
+                                <p class="feedback-shadow-number">Заказ №1119-2 от 13.07.2018</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="feedback-slider">
-                    <div class="slider feedback-slider-item">
-                        <div>
-                            <div class="feedback-slider-div text-center">
-                                <div class="feedback-box">
-                                    <img class="center-block feedback-img" src="img/portfolio-1.jpg" alt="portfolio" width="360px" height="360px">
-                                </div>
-                                <div class="feedback-shadow">
-                                    <p class="feedback-shadow-text">СТЕЛЛАЖ ПО МАКЕТУ</p>
-                                    <p class="feedback-shadow-number">Заказ №1119-2 от 13.07.2018</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="feedback-slider-div text-center">
-                                <div class="feedback-box">
-                                    <img class="center-block feedback-img" src="img/portfolio-2.jpg" alt="portfolio" width="360px" height="360px">
-                                </div>
-                                <div class="feedback-shadow">
-                                    <p class="feedback-shadow-text">ШКАФ ПО РАЗМЕРУ</p>
-                                    <p class="feedback-shadow-number">Заказ №1119-2 от 13.07.2018</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="feedback-slider-div text-center">
-                                <div class="feedback-box">
-                                    <img class="center-block feedback-img" src="img/portfolio-3.jpg" alt="portfolio" width="360px" height="360px">
-                                </div>
-                                <div class="feedback-shadow">
-                                    <p class="feedback-shadow-text">ГАРДЕРОБНАЯ ПО РАЗМЕРУ </p>
-                                    <p class="feedback-shadow-number">Заказ №1119-2 от 13.07.2018</p>
-                                </div>
-                            </div>
-                        </div>
-                       <div>
-                            <div class="feedback-slider-div text-center">
-                                <div class="feedback-box">
-                                    <img class="center-block feedback-img" src="img/portfolio-3.jpg" alt="portfolio" width="360px" height="360px">
-                                </div>
-                                <div class="feedback-shadow">
-                                    <p class="feedback-shadow-text">ГАРДЕРОБНАЯ ПО РАЗМЕРУ </p>
-                                    <p class="feedback-shadow-number">Заказ №1119-2 от 13.07.2018</p>
-                                </div>
-                            </div>
-                        </div>
-                </div>
+            </div>
         </section>
         </div>
     </main>
-    <footer>
-        <div class="container ">
+    <footer class="footer">
+        <div class="container">
             <div class="row">
-                <nav class="col-lg-3">
-                    <a href="# ">О КОМПАНИИ</a>
-                    <a href="# ">БЕСПЛАТНАЯ ДОСТАВКА</a>
-                    <a href="# ">СБОРКА</a>
-                    <a href="# ">ГАРАНТИЯ И СЕРВИС</a>
+                <nav class="col-lg-3 footer-navigation">
+                    <a href="#about" class="nav-link">О комнапии</a>
+                    <a href="#economy" class="nav-link">Бесплатная доставка</a>
+                    <a href="#" class="nav-link">Сборка</a>
+                    <a href="#preoritet" class="nav-link">Гарантия и сервис</a>
                 </nav>
-                <nav class="col-lg-3">
-                    <a href="# ">ОПЛАТА</a>
-                    <a href="# ">ПОРТФОЛИО</a>
-                    <a href="# ">ОТЗЫВЫ</a>
-                    <a href="# ">КОНТАКТЫ</a>
+                <nav class="col-lg-3 footer-navigation">
+                    <a href="# " class="nav-link">Оплата</a>
+                    <a href="#portfolio" class="nav-link">Портфолио</a>
+                    <a href="# " class="nav-link">Отзывы</a>
+                    <a href="#contact" class="nav-link">Контакты</a>
                 </nav>
-                <div class="col-lg-3">
-                    <a href="# ">+7 (495) 128-13-56</a>
-                    <a href="# ">mebel.elena@bk.ru</a>
+                <div class="col-lg-3 adress-footer">
+                    <a href="tel:+74951281356" class="footer-adress">+7 (495) 128-13-56</a>
+                    <br>
+                    <a href="mailto:mebel.elena@bk.ru?subject=Заказ мебели" class="footer-adress">mebel.elena@bk.ru</a>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 footer-button">
                     <button class="button">Заказать звонок</button>
                     <span class="copiright">@copyright 2018</span>
                 </div>
             </div>
         </div>
     </footer>
+    <!--  MODAL! -->
+    <div class="modal" id="modal-php">
+        <h4 class="text-center modal-caption">Заказать звонок</h4>
+        <hr class="caption-decor">
+        <form class="modal-form" id="main-form-ajax" action="#" method="">
+            <input type="text" name="username" id="username" placeholder="Ваше Имя" required class="input input-name">
+            <input id="phone" type="tel" name="phone" placeholder="Телефон" required class="input input-tel">
+            <button id="submit-form" class="button button-modal">Оставить заявку</button>
+        </form>
+    </div>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
@@ -254,10 +322,10 @@
     $(document).ready(function() {
         $('.feedback-slider-item').slick({
             infinite: true,
-            centerMode: true,
-            centerPadding: 0,
             slidesToShow: 3,
             slidesToScroll: 3,
+            dots: true,
+            centerPadding: '60px',
             arrows: true,
             prevArrow: '<i class="fa feedback-slider-arrows arrow-left fa-chevron-left"></i>',
             nextArrow: '<i class="fa feedback-slider-arrows arrow-right fa-chevron-right"></i>',
@@ -285,12 +353,31 @@
 
     });
     </script>
-    <!--   <script>
-    $('.slick-center').slick({ 
-     centerMode: true, 
-     slidesToShow: 1,  
-});
-</script>  -->
+ <script>
+  $(document).ready(function() {
+    $('#main-form-ajax').submit(function() { // проверка на пустоту заполненных полей. Атрибут html5 — required не подходит (не поддерживается Safari)
+        $.ajax({
+            type: "POST",
+            url: "mail.php",
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find('input').val('');
+            $('#main-form-ajax').trigger('reset');
+        });
+        return false;
+    });
+  });
+</script>
+<script>
+  $(document).ready(function() {
+      $('#submit-form').click(function() {
+        if($('input#username').val() !== '') {
+          $('span#nameUser').text(', ' + $('input#username').val());
+        $('#modal-php').modal('show');
+      } 
+      })
+    });
+</script>
 </body>
 
 </html>
