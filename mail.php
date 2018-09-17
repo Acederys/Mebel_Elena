@@ -3,7 +3,6 @@ require 'phpmailer/PHPMailerAutoload.php';
 
 $username = $_POST['username'];
 $phone = $_POST['phone'];
-$user_message = $_POST['user_message'];
 
 $mail = new PHPMailer;
 
@@ -14,12 +13,12 @@ $mail->CharSet = 'utf-8';
 $mail->isSMTP(); // Set mailer to use SMTP
 $mail->Host = 'smtp.mail.ru';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'acederys@mail.ru';                 // SMTP username
-$mail->Password = '2ariadycys2ariaducus';                           // SMTP password
+$mail->Username = 'areataro@mail.ru';                 // SMTP username
+$mail->Password = '2ariadycys';                           // SMTP password
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465;                                    // TCP port to connect to
 
-$mail->setFrom('acederys@mail.ru', 'Ildar S. Zhiganshin');
+$mail->setFrom('acederys@mail.ru', 'Mann ');
 $mail->addAddress('acederys@mail.ru', 'Joe User');     // Add a recipient
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
@@ -37,7 +36,7 @@ if(!$mail->send()) {
     echo 'Message could not be sent.';
     echo 'Mailer Error: ' . $mail->ErrorInfo;
 } else {
-    echo 'Message has been sent';
+    header('location: index.html');
 }
 
 ?>
