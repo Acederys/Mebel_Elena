@@ -13,13 +13,13 @@ $mail->CharSet = 'utf-8';
 $mail->isSMTP(); // Set mailer to use SMTP
 $mail->Host = 'smtp.mail.ru';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'areataro@mail.ru';                 // SMTP username
-$mail->Password = '2ariadycys';                           // SMTP password
+$mail->Username = 'Areataro@mail.ru';                 // SMTP username
+$mail->Password = 'no my password';                           // SMTP password
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465;                                    // TCP port to connect to
 
-$mail->setFrom('acederys@mail.ru', 'Mann ');
-$mail->addAddress('acederys@mail.ru', 'Joe User');     // Add a recipient
+$mail->setFrom('Areataro@mail.ru', 'Mann');
+$mail->addAddress('Areataro@mail.ru', 'Joe User');     // Add a recipient
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
 //$mail->addCC('cc@example.com');
@@ -28,8 +28,8 @@ $mail->addAddress('acederys@mail.ru', 'Joe User');     // Add a recipient
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = 'Это сабджект сообщения';
-$mail->Body    = 'Это тело сообщения дальше жирное <b>блаблабла</b>';
+$mail->Subject = 'Мебель Елена. Заказ мебели';
+$mail->Body    = "Заказ мебели: $phone, $username";
 $mail->AltBody = 'Это сообщение в формате plain text';
 
 if(!$mail->send()) {

@@ -2,7 +2,7 @@
     font-family: 'HelveticaNeueBolder';
     src: url('../font/HelveticaNeueCyr-Medium.otf'),
     url('../font/HelveticaNeueCyr-Medium.woff');
-    font-weight: bolder;
+    font-weight: 600;
 }
 
 @font-face {
@@ -22,7 +22,7 @@
     src: url('../font/HelveticaNeueCyr-Light.otf'),
     url('../font/HelveticaNeueCyr-Light.woff'),
     url('../font/HelveticaNeueLight.ttf');
-    font-weight: lighter;
+    font-weight: 400;
 }
 
 @font-face {
@@ -78,7 +78,7 @@ main {
 
 .logotip {
     font-family: 'Asessor', sans-serif;
-    width: normal;
+    font-weight: normal;
     font-size: 52px;
     margin: 0;
     padding: 0;
@@ -89,14 +89,14 @@ main {
     color: #787b81;
     font-size: 13px;
     font-family: 'HelveticaNeueLight', sans-serif;
-    font-weight: lighter;
+    font-weight: 400;
 }
 
 .header-adress {
     color: #787b81;
     font-size: 24px;
     font-family: 'HelveticaNeueBolder', sans-serif;
-    font-weight: bolder;
+    font-weight: 600;
 }
 
 .header-adress:hover {
@@ -266,7 +266,6 @@ main {
     margin-bottom: 25px;
     font-size: 16px;
     font-weight: normal;
-    margin-left: 467px;
     font-family: 'HelveticaNeue', sans-serif;
 }
 
@@ -324,7 +323,7 @@ main {
 .preoritet-text:before {
     content: '01';
     font-family: 'HelveticaNeueBolder', sans-serif;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 48px;
     color: #d15741;
     position: absolute;
@@ -335,7 +334,7 @@ main {
 .preoritet-text:after {
     content: '02';
     font-family: 'HelveticaNeueBolder', sans-serif;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 48px;
     color: #d15741;
     position: absolute;
@@ -504,7 +503,7 @@ main {
 
 .feedback-shadow-text {
     font-family: 'HelveticaNeueBolder', sans-serif;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 18px;
     color: #ffffff;
     margin: 0;
@@ -927,7 +926,6 @@ main {
         width: 646px;
         min-height: 463px;
         display: block;
-        /* background-color: rgba(255, 255, 255, 0.8); */
         position: relative;
         top: 55px;
         left: 0;
@@ -936,7 +934,7 @@ main {
         padding-left: 0;
     }
     .next {
-        left: 46%;
+        left: 38%;
     }
 }
 
@@ -980,7 +978,7 @@ main {
     }
 
     .fon-preoritet:after {
-        height: 536px;
+        height: 580px;
     }
 
     .economy {
@@ -1011,7 +1009,7 @@ main {
 
     .next {
         top: -13px;
-        left: 31%;
+        left: 26%;
         transform: rotate(90deg);
     }
     .economy-button {
@@ -1061,6 +1059,12 @@ main {
     .about {
         margin-bottom: 58%;
     }
+
+    .text-1 {
+        margin-left: 0;
+        width: 100%;
+    }
+
     .fon-section {
         background: url(../img/fon-sector-1.jpg);
         position: absolute;
@@ -1108,19 +1112,18 @@ main {
     }
 }
 
-
-
-
-
-
-
-
 /*md*/
 
 @media (min-width: 992px) and (max-width: 1199px) {
 
     .text-1 {
         padding-right: 20px;
+    }
+
+    .about:before {
+        background: url('../img/about.jpg') no-repeat;
+        background-size: 85% 85%;
+        top: 25%;
     }
 
     .about-text:before {
@@ -1153,11 +1156,4 @@ main {
     .feedback-slider {
         width: 89%;
     }
-}
-
-@media screen and (min-device-width: 1600px) {
-    /*    .feedback-slider {
-        width: 76%;
-    }
-*/
 }
