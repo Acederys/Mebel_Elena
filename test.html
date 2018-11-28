@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="owlcarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- подключение файла с нашими стилями -->
+    <title>Мебель Елены: Производство и продажа</title>
+</head>
+<body>
+        <section class="portfolio ">
+            <div class="container">
+                <div class="row">
+                    <h3 class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center section-caption" id="portfolio">Портфолио</h3>
+                </div>
+                <div class="">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="">
+                                <img src="img/portfolio-1.jpg" alt="portfolio">
+                            </div>
+                            <div class="box-text-slider">
+                                <p class="slider-items-text">СТЕЛЛАЖ ПО МАКЕТУ</p>
+                                <p class="slider-items-number">Заказ №1119-2 от 13.07.2018</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="">
+                                <img src="img/portfolio-2.jpg" alt="portfolio">
+                            </div>
+                            <div class="box-text-slider">
+                                <p class="slider-items-text">ШКАФ ПО РАЗМЕРУ</p>
+                                <p class="slider-items-number">Заказ №1119-2 от 13.07.2018</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="">
+                                <img src="img/portfolio-3.jpg" alt="portfolio" width="360px" height="360px">
+                            </div>
+                            <div class="box-text-slider">
+                                <p class="slider-items-text ">ГАРДЕРОБНАЯ ПО РАЗМЕРУ </p>
+                                <p class="slider-items-number ">Заказ №1119-2 от 13.07.2018</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                                <div class="">
+                                    <img src="img/portfolio-2.jpg" alt="portfolio">
+                                </div>
+                                <div class="box-text-slider">
+                                    <p class="slider-items-text">ШКАФ ПО РАЗМЕРУ</p>
+                                    <p class="slider-items-number">Заказ №1119-2 от 13.07.2018</p>
+                                </div>
+                            </div>
+                    </div>    
+                </div>
+            </div>
+        </section>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="owlcarousel/docs/assets/vendors/jquery.min.js"></script>
+    <script src="owlcarousel/dist/owl.carousel.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js "></script>
+<script>
+$('.owl-carousel').owlCarousel({
+    center: true,
+    items:2,
+    loop:true,
+    margin:10,
+    responsive:{
+        600:{
+            items:3
+        }
+    }
+});
+
+</script>
+<script>
+let box = document.getElementsByClassName('owl-item'),
+    active = document.querySelectorAll('.active'),
+    boxText = document.querySelectorAll(".box-text-slider"),
+    favorit = document.querySelectorAll(".center .box-text-slider"),
+    center = document.querySelectorAll('.center');
+
+for (let i=0; i<favorit.length; i++) {
+    favorit[i].style.display = "none";
+} 
+</script>
+</body>
+
+</html>
