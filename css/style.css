@@ -544,14 +544,26 @@ main {
 }
 .box-text-slider {
     background-color: #1c3a5f;
-    width: 360px;
+    width: 340px;
     height: 100px;
     position: absolute;
     bottom: 1px;
     z-index: 1;
 }
 
+.center .box-text-slider {
+    display: none;
+}
 
+.active .item {
+    width: 340px;
+    height: 340px;
+}
+
+.center .item {
+    width: 360px;
+    height: 360px;
+}
 .slider-items-text {
     font-family: 'HelveticaNeueBolder', sans-serif;
     font-weight: 600;
