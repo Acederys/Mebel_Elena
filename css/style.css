@@ -840,6 +840,9 @@ main {
     .header-menu {
         font-size: 24px;
     }
+    .header-band {
+        top: 50%;
+    }
     .fon-section {
         background-position: -530px 0px;
     }
@@ -863,6 +866,9 @@ main {
     .about {
         margin-bottom: 111%;
     }
+    .fon-preoritet:after {
+        min-height: 600px;
+    }
 
     .preoritet:before {
         display: none;
@@ -876,12 +882,13 @@ main {
         height: 536px;
     }
 
+
     .economy {
         position: relative;
     }
 
     .fon-economy {
-        top: 10%;
+        top: 14%;
         background-position: -265px -76px;
     }
 
@@ -947,6 +954,33 @@ main {
     .next {
         left: 38%;
     }
+    .owl-theme .owl-dots .owl-dot.active span:before {
+        top: 22%;
+    }
+    .item {
+        width: 100px;
+        height: 100px;
+    }
+    .active .item {
+        width: 100px !important;
+        height: 100px !important;
+    }
+    .center .item {
+        width: 100px !important;
+        height: 100px !important;
+    }
+    
+    .box-text-slider {
+        background-color: #1c3a5f;
+        width: 100px;
+        height: 93px;
+        position: absolute;
+        bottom: 0px;
+        z-index: 1;
+    }
+    .slider-items-text {
+        font-size: 12px;
+    }
 }
 
 
@@ -955,6 +989,11 @@ main {
 @media (min-width: 481px) and (max-width: 767px) {
     .header-menu {
         font-size: 24px;
+        margin-bottom: 3%;
+        margin-top: 2%;
+    }
+    .header-band {
+        top: 50%;
     }
     .fon-section {
         background: url(../img/fon-sector-1.jpg);
@@ -1039,13 +1078,31 @@ main {
     .footer-navigation {
         font-size: 30px;
     }
+    .item {
+        width: 150px;
+        height: 150px;
+    }
+    .active .item {
+    width: 150px !important;
+    height: 150px !important;
+    }
+    .center .item {
+        width: 150px !important;
+        height: 150px !important;
+    }
+
+    .box-text-slider {
+        background-color: #1c3a5f;
+        width: 150px;
+        height: 93px;
+        position: absolute;
+        bottom: 0px;
+        z-index: 1;
+    }
+    .slider-items-text {
+        font-size: 12px;
+    }
 }
-
-
-
-
-
-
 
 
 /*sm*/
@@ -1115,6 +1172,35 @@ main {
 
     .footer-button {
         margin-left: 35%;
+    }
+    .item {
+        width: 200px;
+        height: 200px;
+    }
+    .active .item {
+        width: 200px !important;
+        height: 200px !important;
+    }
+    
+    .center .item {
+        width: 200px !important;
+        height: 200px !important;
+    }
+    .owl-theme .owl-dots .owl-dot.active span:before {
+        top: 25%;
+    }  
+    
+    .box-text-slider {
+        background-color: #1c3a5f;
+        width: 200px;
+        height: 93px;
+        position: absolute;
+        bottom: 0px;
+        z-index: 1;
+    }
+
+    .slider-items-text {
+        font-size: 14px;
     }
 }
 

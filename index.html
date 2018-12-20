@@ -35,13 +35,13 @@
             <div class="row">
                 <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
                     <nav class="row header-novigation">
-                        <a href="#about" class="col-lg-2 col-sm-2 header-menu">О КОМПАНИИ</a>
-                        <a href="#economy" class="col-lg-2 col-sm-2  header-menu">БЕСПЛАТНАЯ ДОСТАВКА</a>
-                        <a href="# " class="col-lg-1 col-sm-1  header-menu">СБОРКА</a>
-                        <a href="#preoritet" class="col-lg-2 col-sm-2  header-menu">ГАРАНТИЯ И СЕРВИС</a>
-                        <a href="# " class="col-lg-2  col-sm-1  header-menu">ОПЛАТА</a>
-                        <a href="#portfolio" class="col-lg-2 col-sm-2  header-menu">ПОРТФОЛИО</a>
-                        <a href="# " class="col-lg-1 col-sm-1  header-menu">ОТЗЫВЫ</a>
+                        <a href="#about" class="col-lg-2 col-sm-4 header-menu">О КОМПАНИИ</a>
+                        <a href="#economy" class="col-lg-2 col-sm-4  header-menu">БЕСПЛАТНАЯ ДОСТАВКА</a>
+                        <a href="# " class="col-lg-1 col-sm-4  header-menu">СБОРКА</a>
+                        <a href="#preoritet" class="col-lg-2 col-sm-4  header-menu">ГАРАНТИЯ И СЕРВИС</a>
+                        <a href="# " class="col-lg-2  col-sm-4  header-menu">ОПЛАТА</a>
+                        <a href="#portfolio" class="col-lg-2 col-sm-4  header-menu">ПОРТФОЛИО</a>
+                        <a href="# " class="col-lg-1 col-sm-4  header-menu">ОТЗЫВЫ</a>
                     </nav>
                 </div>
             </div>
@@ -277,29 +277,20 @@
 <script>
 $('.owl-carousel').owlCarousel({
     center: true,
-    items:2,
+    items:3,
     loop:true,
     margin:10,
     nav: true,
     responsive:{
-        600:{
+        0:{
+            items:3
+        },
+        800:{
             items:3
         }
     }
 });
-
 </script>
-<!-- <script>
-        let box = document.getElementsByClassName('owl-item'),
-            active = document.querySelectorAll('.active'),
-            boxText = document.querySelectorAll(".box-text-slider"),
-            favorit = document.querySelectorAll(".center .box-text-slider"),
-            center = document.querySelectorAll('.center');
-        
-        for (let i=0; i<favorit.length; i++) {
-            favorit[i].style.display = "none";
-        } 
-        </script> -->
     <script>
     $(document).ready(function() {
         $('#main-form-ajax').submit(function() { // проверка на пустоту заполненных полей. Атрибут html5 — required не подходит (не поддерживается Safari)
