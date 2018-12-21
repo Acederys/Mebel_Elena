@@ -49,7 +49,11 @@
     <main>
         <section class="section-header">
             <div class="container">
-                <div class="fon-section"></div>
+                <div class="custom1">
+                    <div class="fon-section"></div>
+                    <div class="fon-section"></div>
+                    <div class="fon-section"></div>
+                </div> 
                 <div class="row">
                     <h2 class="col-lg-6 col-sm-7 caption-header">Все для Вашего красивого дома!</h2>
                 </div>
@@ -234,7 +238,7 @@
                         <div class="col-lg-6 ">
                             <a href="#about " class="nav-link ">О комнапии</a>
                             <a href="#economy " class="nav-link ">Бесплатная доставка</a>
-                            <a href="# " class="nav-link ">Сборка</a>
+                            <a href="#" class="nav-link ">Сборка</a>
                             <a href="#preoritet " class="nav-link ">Гарантия и сервис</a>
                         </div>
                         <div class="col-lg-6 ">
@@ -273,6 +277,23 @@
     <script src="owlcarousel/dist/owl.carousel.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js "></script>
+   <script>
+var owl = $('.custom1');
+owl.owlCarousel({
+    items:1,
+    loop:true,
+    margin:10,
+    autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true
+});
+$('.play').on('click',function(){
+    owl.trigger('play.owl.autoplay',[3000])
+})
+$('.stop').on('click',function(){
+    owl.trigger('stop.owl.autoplay')
+})
+   </script> 
 <script>
 $('.owl-carousel').owlCarousel({
     center: true,

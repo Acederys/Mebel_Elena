@@ -176,6 +176,35 @@ main {
     min-height: 520px;
 }
 
+.owl-dots {
+    position: absolute;
+    top: 710px;
+    left: 886px;
+}
+
+button.owl-dot{
+    display: inline-block;
+    width: 10px;
+    height: 14px;
+    border: 1px solid #d25f4a;
+    background: #eeeeed;
+    border-radius: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+    position: relative;
+}
+button.active.owl-dot:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    background: #d25f4a;
+    top: 3px;
+    left: 3px;
+}
+
 .fon-section {
     background: url('../img/fon-sector-1.jpg');
     position: absolute;
