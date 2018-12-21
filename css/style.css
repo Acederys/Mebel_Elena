@@ -176,13 +176,13 @@ main {
     min-height: 520px;
 }
 
-.owl-dots {
+.section-header .owl-dots {
     position: absolute;
     top: 710px;
     left: 886px;
 }
 
-button.owl-dot{
+.section-header button.owl-dot{
     display: inline-block;
     width: 10px;
     height: 14px;
@@ -193,7 +193,7 @@ button.owl-dot{
     margin-right: 5px;
     position: relative;
 }
-button.active.owl-dot:before {
+.section-header button.active.owl-dot:before {
     content: '';
     display: block;
     position: absolute;
