@@ -75,11 +75,11 @@ main {
 }
 
 .header {
-    margin-bottom: 2%;
+    margin-bottom: 30px;
 }
 
 .header-information {
-    margin-bottom: 2%;
+    margin-bottom: 30px;
 }
 
 .logotip {
@@ -173,7 +173,7 @@ main {
 }
 
 .section-header {
-    height: 520px;
+    min-height: 520px;
 }
 
 .fon-section {
@@ -187,7 +187,7 @@ main {
 .about {
     position: relative;
     height: 540px;
-    margin-top: 8%;
+    margin-top: 60px;
 }
 
 .about:before {
@@ -209,7 +209,7 @@ main {
     letter-spacing: 3px;
     margin-bottom: 34px;
     color: #ffffff;
-    margin-top: 11%;
+    margin-top: 180px;
 }
 
 .section-caption {
@@ -279,8 +279,8 @@ main {
 .preoritet {
     position: relative;
     min-height: 540px;
-    margin-top: 6%;
-    margin-bottom: 6%;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .preoritet:before {
@@ -350,7 +350,7 @@ main {
 }
 
 .advantages {
-    margin-bottom: 2%;
+    margin-bottom: 60px;
 }
 
 .advantages-list {
@@ -373,7 +373,7 @@ main {
 
 .economy {
     font-size: 16px;
-    margin-bottom: 13%
+    margin-bottom: 150px;
 }
 
 .fon-economy {
@@ -433,7 +433,7 @@ main {
     border-radius: 95px;
     position: relative;
     top: 0;
-    left: 31%;
+    left: 85px;
     margin-bottom: 8px;
     position: relative;
 }
@@ -447,7 +447,7 @@ main {
     justify-content: space-around;
     list-style: none;
     position: relative;
-    margin-top: 5%;
+    margin-top: 50px;
 }
 
 .conditions-item {
@@ -478,12 +478,6 @@ main {
 .icon-bascket-1 {
 
     background-position: 0 0;
-}
-
-.img-conditions {
-    position: absolute;
-    top: 20%;
-    left: 22%;
 }
 
 .box.box-1 {
@@ -531,19 +525,7 @@ main {
 .box-text-slider{
     display: block;
 }
-.slider-slides{
-    width: 300%;
-}
-.slider-inner{
-    overflow: hidden;
-}
-.slider-item {
-    display: block;
-    position: relative;
-    float: left;
-    width: 400px;
-    height: 400px;
-}
+
 .box-text-slider {
     background-color: #1c3a5f;
     width: 340px;
@@ -596,38 +578,6 @@ main {
     right: 0;
     text-align: center;
 }
-
-.slider input {
-    display: none;
-}
-
-.slider-controls-label {
-    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.8);
-    border-radius: 50%;
-    width: 12px;
-    height: 12px;
-    border: 4px solid white;
-    background-color: white;
-}
-
-#btn-1:checked ~ .slider-controls label[for="btn-1"],
-#btn-2:checked ~ .slider-controls label[for="btn-2"],
-#btn-3:checked ~ .slider-controls label[for="btn-3"] {
-    background-color: #d15741;
-}
-
-#btn-1:checked ~ .slider-inner .slider-slides {
-    transform: translate(0);
-}
-
-#btn-2:checked ~ .slider-inner .slider-slides {
-    transform: translate(-450px);
-}
-
-#btn-3:checked ~ .slider-inner .slider-slides {
-    transform: translate(-900px);
-}
-
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
     border: #ef563e;
     border: 1px solid #ef563e;
@@ -644,8 +594,8 @@ main {
     height: 4px;
     background-color: #ef563e;
     border-radius: 50%;
-    top: 30%;
-    left: 30%;
+    top: 2px;
+    left: 2px;
 }
 .owl-theme .owl-dots .owl-dot span {
     background: #eeeeed;
@@ -660,7 +610,7 @@ main {
     border-radius: 50%;
     background: #f2f2f0;
     position: absolute;
-    top: 35%;
+    top: 150px;
 }
 
 .owl-carousel .owl-nav button.owl-next {
@@ -759,7 +709,7 @@ main {
     margin: 0 auto;
     position: fixed;
     display: block;
-    top: 20%;
+    top: 205px;
     left: 0;
     right: 0;
     background-color: #ffffff;
@@ -841,7 +791,7 @@ main {
         font-size: 24px;
     }
     .header-band {
-        top: 50%;
+        top: 240px;
     }
     .fon-section {
         background-position: -530px 0px;
@@ -864,7 +814,7 @@ main {
     }
 
     .about {
-        margin-bottom: 111%;
+        margin-bottom: 350px;
     }
     .fon-preoritet:after {
         min-height: 600px;
@@ -888,7 +838,7 @@ main {
     }
 
     .fon-economy {
-        top: 14%;
+        top: 55px;
         background-position: -265px -76px;
     }
 
@@ -911,11 +861,11 @@ main {
 
     .next {
         top: -13px;
-        left: 31%;
+        left: 130px;
         transform: rotate(90deg);
     }
     .economy-button {
-        margin-left: 13%;
+        margin-left: 100px;
     }
     .footer-button {
         margin-right: 0;
@@ -925,7 +875,7 @@ main {
         font-size: 30px;
     }
     .footer-button {
-        margin-left: 20%;
+        margin-left: 100px;
     }
     .footer-navigation {
         font-size: 30px;
@@ -952,10 +902,10 @@ main {
         padding-left: 0;
     }
     .next {
-        left: 38%;
+        left: 130px;
     }
     .owl-theme .owl-dots .owl-dot.active span:before {
-        top: 22%;
+        top: 2px;
     }
     .item {
         width: 100px;
@@ -989,11 +939,11 @@ main {
 @media (min-width: 481px) and (max-width: 767px) {
     .header-menu {
         font-size: 24px;
-        margin-bottom: 3%;
-        margin-top: 2%;
+        margin-bottom: 15px;
+        margin-top: 10px;
     }
     .header-band {
-        top: 50%;
+        top: 245px;
     }
     .fon-section {
         background: url(../img/fon-sector-1.jpg);
@@ -1016,7 +966,7 @@ main {
     }
 
     .about {
-        margin-bottom: 30%;
+        margin-bottom: 40px;
     }
 
     .preoritet:before {
@@ -1036,7 +986,7 @@ main {
     }
 
     .fon-economy {
-        top: 10%;
+        top: 50px;
         background-position: -265px -76px;
     }
 
@@ -1059,11 +1009,11 @@ main {
 
     .next {
         top: -13px;
-        left: 26%;
+        left: 125px;
         transform: rotate(90deg);
     }
     .economy-button {
-        margin-left: 13%;
+        margin-left: 100px;
     }
     .footer-button {
         margin-right: 0;
@@ -1073,7 +1023,7 @@ main {
         font-size: 30px;
     }
     .footer-button {
-        margin-left: 20%;
+        margin-left: 132px;
     }
     .footer-navigation {
         font-size: 30px;
@@ -1121,10 +1071,10 @@ main {
         background-image: url('../img/about.jpg');
         display: block;
         top: 498px;
-        left: 21%;
+        left: 200px;
     }
     .about {
-        margin-bottom: 58%;
+        margin-bottom: 405px;
     }
 
     .text-1 {
@@ -1163,15 +1113,15 @@ main {
     }
 
     .footer-navigation {
-        margin-bottom: 5%;
+        margin-bottom: 15px;
     }
 
     .adress-footer {
-        margin-left: 35%;
+        margin-left: 255px;
     }
 
     .footer-button {
-        margin-left: 35%;
+        margin-left: 255px;
     }
     .item {
         width: 200px;
@@ -1217,7 +1167,8 @@ main {
     .about:before {
         background: url('../img/about.jpg') no-repeat;
         background-size: 85% 85%;
-        top: 25%;
+        top: 100px;
+        left: 100px;
     }
 
     .about-text:before {
