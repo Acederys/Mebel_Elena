@@ -115,7 +115,7 @@ main {
     text-transform: uppercase;
     color: white;
     background-color: #d15741;
-    border: none;
+    border: 1px solid #d15741;
     font-family: 'HelveticaNeue', sans-serif;
     font-weight: normal;
     font-size: 16px;
@@ -125,6 +125,7 @@ main {
     text-align: center;
     padding: 13px;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 .button:hover {
@@ -132,6 +133,7 @@ main {
     color: #d15741;
     border: 1px solid #d15741;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 .header-button {
@@ -149,6 +151,13 @@ main {
     left: 0;
 }
 
+.header-novigation {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
 .header-menu {
     color: #13335a;
     font-family: 'HelveticaNeueBold', sans-serif;
@@ -157,6 +166,8 @@ main {
     text-align: center;
     text-transform: uppercase;
     list-style: none;
+    align-self: baseline;
+    margin-right: 10px;
 }
 
 .header-menu:hover {
@@ -394,10 +405,38 @@ main {
     font-size: 18px;
     width: 166px;
     text-align: center;
+    position: relative;
+    padding-top: 90px;
 }
 
 .img-advantages {
-    margin-bottom: 19px;
+    display: block;
+    background: url('../img/sprite-2.png') no-repeat;
+    width: 85px;
+    height: 85px;
+    position: absolute;
+    top: 0 ;
+    left: 39px;
+}
+
+.quality {
+    background-position: -410px 0;
+}
+
+.delivery {
+    background-position: -212px 0 ;
+}
+
+.garantee {
+    background-position: 0 0;
+}
+
+.individual {
+    background-position: -101px 0 ;
+}
+
+.price {
+    background-position: -505px 0;
 }
 
 .economy {
@@ -1197,7 +1236,7 @@ main {
         background: url('../img/about.jpg') no-repeat;
         background-size: 85% 85%;
         top: 100px;
-        left: 100px;
+        left: 33px;
     }
 
     .about-text:before {
@@ -1205,9 +1244,10 @@ main {
     }
 
     .preoritet:before {
-        height: 310px;
-        width: 360px;
+        height: 272px;
+        width: 287px;
         top: 232px;
+        right: 17px;
     }
 }
 
