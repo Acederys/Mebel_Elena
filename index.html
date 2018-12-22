@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="owlcarousel/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="owlcarousel/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="fancybox/jquery.fancybox.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- подключение файла с нашими стилями -->
     <title>Мебель Елены: Производство и продажа</title>
@@ -27,7 +28,7 @@
                     <a href="mailto:mebel.elena@bk.ru?subject=Заказ мебели" class="header-adress">mebel.elena@bk.ru</a>
                 </div>
                 <div class="col-md-4 col-xs-12">
-                    <a type="button" class="button header-button" href="#modal-php">Заказать звонок</a>
+                    <a type="button" class="button header-button" href="javascript:;" data-fancybox data-src="#modal-php">Заказать звонок</a>
                 </div>
             </div>
             <hr class="header-band">
@@ -59,7 +60,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-3">
-                        <a class="button" href="#modal-php">СДЕЛАТЬ ЗАКАЗ</a>
+                        <a class="button" href="javascript:;" data-fancybox data-src="#modal-php">СДЕЛАТЬ ЗАКАЗ</a>
                     </div>
                 </div>
             </div>
@@ -251,28 +252,28 @@
                     <a href="mailto:mebel.elena@bk.ru?subject=Заказ мебели " class="footer-adress ">mebel.elena@bk.ru</a>
                 </div>
                 <div class="col-lg-3 col-xs-6 col-sm-5 col-sm-offset-5 col-xs-12 footer-button ">
-                    <a class="button " href="#modal-php ">Заказать звонок</a>
+                    <a class="button " href="javascript:;" data-fancybox data-src="#modal-php">Заказать звонок</a>
                     <span class="copiright ">@copyright 2018</span>
                 </div>
             </div>
         </div>
     </footer>
     <!--  MODAL! -->
-    <div class="modal " id="modal-php ">
-        <h4 class="text-center modal-caption ">Заказать звонок</h4>
-        <hr class="caption-decor ">
-        <a class="close " href="#close ">&times;</a>
-        <form class="modal-form " id="main-form-ajax ">
-            <input type="text " name="username " id="username " placeholder="Ваше Имя " required class="input input-name ">
-            <input id="phone " type="tel " name="phone " placeholder="Телефон " required class="input input-tel ">
-            <button id="submit-form " class="button button-modal ">Оставить заявку</button>
-        </form>
-    </div>
+    <div class="modal " id="modal-php">
+            <h4 class="text-center modal-caption ">Заказать звонок</h4>
+            <hr class="caption-decor ">
+            <form class="modal-form " id="main-form-ajax ">
+                <input type="text " name="username " id="username " placeholder="Ваше Имя " required class="input input-name ">
+                <input id="phone " type="tel " name="phone " placeholder="Телефон " required class="input input-tel ">
+                <button id="submit-form " class="button button-modal ">Оставить заявку</button>
+            </form>
+        </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="owlcarousel/docs/assets/vendors/jquery.min.js"></script>
     <script src="owlcarousel/dist/owl.carousel.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js "></script>
+    <script src="fancybox/jquery.fancybox.min.js"></script>
    <script>
 var owl = $('.custom1');
 owl.owlCarousel({
