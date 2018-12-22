@@ -731,6 +731,7 @@ main {
     line-height: 23px;
     margin: 0;
     padding: 0;
+    margin-right: 80px;
 }
 
 .nav-link:hover {
@@ -740,6 +741,14 @@ main {
 .footer-navigation {
     margin-left: -15px;
     margin-right: 22px;
+}
+
+.footer-menu {
+    list-style-position: inside;
+    -moz-column-count: 2; /* Firefox */
+    -webkit-column-count: 2; /* Safari and Chrome */
+    column-count: 2;
+    list-style-type: decimal;
 }
 
 .footer-adress {
