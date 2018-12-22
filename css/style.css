@@ -476,8 +476,11 @@ main {
 }
 
 .icon-checkmark{
-    color: #ef604a;
-    font-size: 30px;
+    display: block;
+    background: url('../img/check-1.png') 100% no-repeat;
+    width: 30px;
+    height: 22px;
+    background-position: 0 0;
     position: absolute;
     left: -43px;
     top: 22px;
