@@ -610,15 +610,20 @@ main {
     display: none;
 }
 
-.active .item {
+.item {
     width: 340px;
     height: 340px;
 }
 
-.center .item {
+ .active .item {
+    width: 340px;
+    height: 340px;
+}
+
+.active:nth-child(2) .item {
     width: 360px;
     height: 360px;
-}
+} 
 .slider-items-text {
     font-family: 'HelveticaNeueBolder', sans-serif;
     font-weight: 600;

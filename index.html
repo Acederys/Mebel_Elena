@@ -225,8 +225,35 @@
                             <div class="box-text-slider">
                                 <p class="slider-items-text">ШКАФ ПО РАЗМЕРУ</p>
                                 <p class="slider-items-number">Заказ №1119-2 от 13.07.2018</p>
+                            </div>    
                         </div>
-                    </div>
+                        <div class="item">
+                            <div>
+                                <img src="img/portfolio-2.jpg" alt="portfolio">
+                            </div>
+                            <div class="box-text-slider">
+                                <p class="slider-items-text">ШКАФ ПО РАЗМЕРУ</p>
+                                <p class="slider-items-number">Заказ №1119-2 от 13.07.2018</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <img src="img/portfolio-3.jpg" alt="portfolio" >
+                            </div>
+                            <div class="box-text-slider">
+                                <p class="slider-items-text ">ГАРДЕРОБНАЯ ПО РАЗМЕРУ </p>
+                                <p class="slider-items-number ">Заказ №1119-2 от 13.07.2018</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <img src="img/portfolio-2.jpg" alt="portfolio">
+                            </div>
+                            <div class="box-text-slider">
+                                <p class="slider-items-text">ШКАФ ПО РАЗМЕРУ</p>
+                                <p class="slider-items-number">Заказ №1119-2 от 13.07.2018</p>
+                            </div>    
+                        </div>
                 </div>    
             </div>
         </section>
@@ -293,20 +320,21 @@ $('.stop').on('click',function(){
    </script> 
 <script>
 $('.owl-carousel').owlCarousel({
-    center: true,
-    items:3,
     loop:true,
     margin:10,
-    nav: true,
+    nav:true,
     responsive:{
         0:{
+            items:1
+        },
+        600:{
             items:3
         },
-        800:{
+        1000:{
             items:3
         }
     }
-});
+})
 </script>
     <script>
     $(document).ready(function() {
