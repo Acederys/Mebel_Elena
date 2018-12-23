@@ -606,7 +606,7 @@ main {
     z-index: 1;
 }
 
-.center .box-text-slider {
+.owl-item.active:nth-child(2) .item .box-text-slider {
     display: none;
 }
 
@@ -620,9 +620,9 @@ main {
     height: 340px;
 }
 
-.active:nth-child(2) .item {
-    width: 360px;
-    height: 360px;
+.owl-item.active:nth-child(2){
+    width: 360px !important;
+    height: 360px !important;
 } 
 .slider-items-text {
     font-family: 'HelveticaNeueBolder', sans-serif;
