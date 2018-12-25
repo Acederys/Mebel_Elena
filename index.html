@@ -220,12 +220,12 @@
                         </div>
                         <div class="item">
                             <div>
-                                <img src="img/portfolio-2.jpg" alt="portfolio">
+                                <img src="img/portfolio-1.jpg" alt="portfolio">
                             </div>
                             <div class="box-text-slider">
-                                <p class="slider-items-text">ШКАФ ПО РАЗМЕРУ</p>
+                                <p class="slider-items-text">СТЕЛЛАЖ ПО МАКЕТУ</p>
                                 <p class="slider-items-number">Заказ №1119-2 от 13.07.2018</p>
-                            </div>    
+                            </div>
                         </div>
                         <div class="item">
                             <div>
@@ -335,6 +335,16 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+</script>
+<script>
+$('.owl-carousel .owl-nav button').on('click', function(){
+    $('.owl-item .item')
+    .css('width', '340px').css('height', '340px');
+    $('.owl-item.active:eq(2) .item')
+    .css('width', '360px').css('height', '360px');
+    $('.owl-item.active:eq(2) .item .box-text-slider')
+    .css('display', 'none');
+});
 </script>
     <script>
     $(document).ready(function() {
