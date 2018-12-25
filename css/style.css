@@ -606,6 +606,7 @@ main {
     z-index: 1;
 }
 
+
 .owl-item.active:nth-child(2) .item .box-text-slider {
     display: none;
 }
