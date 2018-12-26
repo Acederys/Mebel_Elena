@@ -1267,6 +1267,11 @@ main {
         top: 232px;
         right: 17px;
     }
+
+    .owl-item .active {
+        width: 240px;
+        height: 240px;
+    }
 }
 
 /*lg*/

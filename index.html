@@ -323,18 +323,32 @@ $('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,
     nav:true,
+    // autoplay:true,
+    // autoplayTimeout:3000,
     responsive:{
         0:{
             items:1
         },
         600:{
-            items:3
+            items:1
         },
         1000:{
             items:3
         }
     }
 })
+</script>
+<script>
+var timerId = setInterval(function() {
+    $('.owl-item .item')
+    .css('width', '340px').css('height', '340px');
+    $('.owl-item .item .box-text-slider')
+    .css('display', 'block');
+    $('.owl-item.active:eq(2) .item')
+    .css('width', '360px').css('height', '360px');
+    $('.owl-item.active:eq(2) .item .box-text-slider')
+    .css('display', 'none');
+}, 3000);
 </script>
 <script>
 $('.owl-carousel .owl-nav button').on('click', function(){
@@ -363,7 +377,8 @@ $('.owl-carousel .owl-nav button').on('click', function(){
             return false;
         });
     });
-    </script>  
+    </script>
+
 </body>
 
 </html>
